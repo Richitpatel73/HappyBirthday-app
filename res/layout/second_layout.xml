@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.example.happybirthday.SecondActivity" >
+
+    <ImageView
+        android:id="@+id/myimage"
+        android:layout_below="@+id/close"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/close"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/ibPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:src="@drawable/previus_button_small" />
+
+   
+    <ImageButton
+        android:id="@+id/ibNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ibPrevious"
+        android:onClick="onClick"
+        android:src="@drawable/next_button_small" />
+
+    <ImageButton
+        android:id="@+id/close"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="close"
+        android:src="@drawable/close" />
+
+</RelativeLayout>

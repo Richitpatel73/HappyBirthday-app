@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/close"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="close"
+        android:src="@drawable/close" />
+
+    <ImageButton
+        android:id="@+id/nextActivity"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="14dp"
+        android:onClick="nextActivity"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="stopAudio"
+        android:src="@drawable/stop" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nextActivity"
+        android:layout_alignBottom="@+id/nextActivity"
+        android:layout_centerInParent="true"
+        android:onClick="playAudio"
+        android:src="@drawable/play" />
+
+    <com.example.happybirthday.AnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
